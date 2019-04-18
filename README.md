@@ -14,6 +14,7 @@ For running you must have `python3` with package manager and virtual environment
 ```bash
 virtualenv -p python3 env
 source env/bin/activate
+pip install numpy==1.15.2  # fix for build wheel for astropy
 pip install -r requirements.txt
 ```
 
