@@ -88,7 +88,10 @@ for fn in sorted(jsons):
             # write PNG file
             fn = join(outdir, file_name)
             with open(fn, 'wb') as f:
-                f.write(base64.b64decode(frame_content))
+                if frame_content is None:
+                    print('Hit with ID: %s is without PNG image' % str(hit_id))
+                else:
+                    f.write(base64.b64decode(frame_content))
 
             # append to CSV file
             csv = join(csvdir, '%s.csv' % str(device_id))
