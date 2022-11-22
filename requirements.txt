@@ -14,7 +14,7 @@ kiwisolver==1.0.1
 matplotlib==3.0.0
 networkx==2.2
 photutils==0.5
-Pillow==5.3.0
+Pillow==9.3.0
 pyparsing==2.2.2
 python-dateutil==2.7.3
 PyWavelets==1.0.1
